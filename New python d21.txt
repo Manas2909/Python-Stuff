@@ -1,0 +1,12 @@
+#NumPY
+
+NumPY is the fundamental package for scientific in python.
+it is a python library that provides a multidimentional array object,various derived objects(such as matrices), and including mathematical, logical,shape manipulation,sorting, selecting,I/0, discrete Fourier tranforms,basic linear algebra,basic statistical operations,random simulations and much more.
+
+At the core of the NumPY package, is the ndarray object.
+
+NumPY arrays have a fixed size at creation,unlike python lists(which can grow dynamically)
+
+changing the size of an ndarry will create a new array and delete the original.
+
+the elements in numpy
