@@ -4,9 +4,9 @@ Created on Sat Nov 16 14:22:37 2019
 
 @author: Manas
 """
-import pandas as pd
+#import pandas as pd
 import mysql.connector,sys
-conn= mysql.connector.connect(host='localhost',user='root',password='root',port=3306)
+conn= mysql.connector.connect(host='localhost',user='python',password='root',port=3306)
 c=conn.cursor()
 def create_table():
     c.execute("create table if not exists movie_genres(genres varchar(100))")

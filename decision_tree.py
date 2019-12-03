@@ -15,7 +15,7 @@ import seaborn as sns
 import graphviz
 from sklearn.tree import export_graphviz
 print(os.getcwd())
-os.chdir("C:\Class Pyhton\datasets")
+os.chdir("C:\\Class Pyhton\\datasets")
 data=pd.read_csv("iris.csv")
 #print(data)
 X=data[['sepal_length','sepal_width','petal_length','petal_width']]
@@ -30,4 +30,4 @@ print(dtclf.score(X_test,y_test))
 print(accuracy_score(y_test,y_pred))
 dot_data=export_graphviz(dtclf,out_file=None,feature_names=data.drop('class',1).columns,class_names=data['class'].unique(),filled=True,rounded=True,special_characters=True)
 graph= graphviz.Source(dot_data)
-graph.render("C:\Class Pyhton\iris_graph")
+graph.render("C:\\Class Pyhton\\iris_graph2")

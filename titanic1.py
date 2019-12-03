@@ -16,8 +16,9 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 #from sklearn.metrics import LabelEncoder
 print(os.getcwd())
-os.chdir("C:\Class Pyhton\datasets")
+os.chdir("C:\\Class Pyhton\\datasets")
 data=pd.read_csv("titanic-train.csv")
+
 '''
 print(os.getcwd())
 location=r"C:\Class Pyhton\datasets\titanic-train.csv"
@@ -32,6 +33,10 @@ print(data.iloc[3:5])
 print(data.isnull().sum())
 #data.dropna(inplace=True)
 print(data.shape)
+
+#data.duplicated(subset=None ,Keep=False)
+
+
 #print(data[(data['Age'].mean())].tail())
 #print(data['Age'].mean())
 #data1=data['Age'].mean()
